@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django import views
 from django.views.generic import DetailView
 
-from main.models import Article, Slider, Contact
+from main.models import *
 
 
 class IndexView(views.View):
@@ -20,6 +20,9 @@ class IndexView(views.View):
 class ArticlesList(views.View):
 
     def get(self, request, *args, **kwargs):
+        context = {
+
+        }
         return render(request, 'articles.html', context)
 
 
@@ -27,5 +30,8 @@ class ArticleDetail(views.generic.DetailView):
     model = Article
 
     def get(self, request, *args, **kwargs):
+        context = {
+
+        }
         return render(request, 'article_detail.html', context)
 

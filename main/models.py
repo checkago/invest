@@ -1,3 +1,5 @@
+from email.mime import image
+
 from django.db import models
 
 
@@ -22,6 +24,70 @@ class Slider(models.Model):
     class Meta:
         verbose_name = 'Слайд'
         verbose_name_plural = 'Слайды'
+
+    def __str__(self):
+        return self.name
+
+
+class About(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Имя')
+
+    class Meta:
+        verbose_name = 'Информация'
+        verbose_name_plural = 'О нас'
+
+    def __str__(self):
+        return self.name
+
+
+class Performance(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Название')
+    experience = models.CharField(max_length=2, verbose_name='Опыт')
+    projects = models.CharField(max_length=3, verbose_name='Количество проектов')
+    models = models.CharField(max_length=3, verbose_name='Количество моделей')
+
+    class Meta:
+        verbose_name = 'Показатель'
+        verbose_name_plural = 'Показатели'
+
+    def __str__(self):
+        return self.name
+
+
+class Project(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Название проекта')
+    place = models.CharField(max_length=50, verbose_name='Место/город запуска проекта')
+    image = models.ImageField(upload_to='projects/', verbose_name='Фото проекта')
+    link = models.URLField(verbose_name='Ссылка на сайт проекта')
+
+    class Meta:
+        verbose_name = 'Проект'
+        verbose_name_plural = 'Реализованные проекты'
+
+    def __str__(self):
+        return self.name
+
+
+class Review(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Имя')
+    position = models.CharField(max_length=50, verbose_name='Позиция/должность')
+    text = models.TextField(verbose_name='Текст отзыва')
+
+    class Meta:
+        verbose_name = 'Отзыв'
+        verbose_name_plural = 'Отзывы'
+
+    def __str__(self):
+        return self.name
+
+
+class Bank(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Наименование банка')
+    logo = models.ImageField(upload_to='bank/', verbose_name='Лого банка')
+
+    class Meta:
+        verbose_name = 'Банк'
+        verbose_name_plural = 'Банки'
 
     def __str__(self):
         return self.name
