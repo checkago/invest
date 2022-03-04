@@ -1,5 +1,4 @@
 asgiref
-crispy-bootstrap5
 Django
 django-ckeditor
 django-crispy-forms
