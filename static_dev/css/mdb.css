@@ -3992,7 +3992,7 @@ table.table a.btn.btn-black {
       color: rgba(0, 0, 0, 0.3); }
   .navbar.navbar-light .navbar-toggler-icon {
     cursor: pointer;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 35, 52, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
   .navbar.navbar-light .breadcrumb .nav-item .nav-link,
   .navbar.navbar-light .navbar-nav .nav-item .nav-link {
     color: #000;
@@ -9803,10 +9803,10 @@ span[data-jarallax-element] {
 
 .creative-lp .navbar {
   font-weight: 400;
-  background-color: #dddde4; }
+  background-color: #f2f2f2; }
   @media (max-width: 768px) {
     .creative-lp .navbar {
-      background: linear-gradient(40deg, #FF5858, #ee4392); } }
+      background: linear-gradient(40deg, #f2f2f2, #f2f2f2); } }
   @media (min-width: 769px) {
     .creative-lp .navbar:not(.top-nav-collapse) {
       box-shadow: none; } }
