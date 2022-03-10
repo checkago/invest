@@ -19,10 +19,7 @@
         <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto smooth-scroll float-right">
             <li class="nav-item">
-              <a class="nav-link title" href="#about" data-offset="90">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link title" href="#features" data-offset="90">Финансовая модель</a>
+              <a class="nav-link title" href="#features" data-offset="90">Финансовая модели</a>
             </li>
             <li class="nav-item">
               <a class="nav-link title" href="#services" data-offset="90">Условия</a>
@@ -42,36 +39,47 @@
     </nav>
 
     <!--Intro Section-->
-    <section class="view intro-2"
-      style="background-image: url('{% static 'img/header_background.webp' %}');">
-      <div class="mask">
-        <div class="container h-100 d-flex justify-content-center align-items-center">
+    <section class="pt-3 pb-2"
+      style="background-image: url('{% static 'img/header_background_2.webp' %}');">
+        <div class="container h-75 d-flex justify-content-center align-items-center">
           <div class="row flex-center pt-5 mt-3">
-            <div class="col-md-12 col-lg-6 text-center text-md-left margins">
+            <div class="col-md-12 col-lg-6 text-center text-md-left text-mdleft margins">
               <div class="dark-grey-text">
-                <h1 class="display-4 title mt-md-5 mt-lg-0 font-weight-bold wow fadeIn" data-wow-delay="0.3s">
-                  <strong>Инвест Консалт</strong>
-                </h1>
+                <h4 class="title mt-md-3 mt-lg-0 font-weight-bold dark-grey-text" data-wow-delay="0.3s">
+                  <strong>Финансовые модели</strong>
+                </h4>
                 <hr class="hr-light wow fadeIn" data-wow-delay="0.3s">
-                <h6 class="grey-text wow fadeIn" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Rem repellendus quasi fuga nesciunt
-                  dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
-                  iste.
-                </h6>
-                <br>
-                <a class="btn pink-gradient white-text btn-rounded font-weight-bold wow fadeIn"
-                  data-wow-delay="0.3s">Заказать
-                </a>
+                <ul class="list-unstyled">
+                    <li class="align-items-start text-left">
+                        <img class="float-left" src="{% static 'img/checkout.webp' %}" width="25px" />
+                        <span class="ml-1"> Оценка финансовых перспектив бизнеса и выбор стратегии развития</span>
+                    </li>
+                    <li class="align-items-start text-left">
+                        <img class="float-left" src="{% static 'img/checkout.webp' %}" width="25px" />
+                        <span class="ml-1"> Получение финансирования от венчурных фондов, клубов бизнес-ангелов, частных инвесторов</span>
+                    </li>
+                    <li class="align-items-start text-left">
+                        <img class="float-left" src="{% static 'img/checkout.webp' %}" width="25px" />
+                        <span class="ml-1"> Получение инвестиционного кредита в банке</span>
+                    </li>
+                    <li class="align-items-start text-left">
+                        <img class="float-left" src="{% static 'img/checkout.webp' %}" width="25px" />
+                        <span class="ml-1"> Получение государственных субсидий на развитие бизнеса</span>
+                    </li>
+                </ul>
               </div>
             </div>
 
             <div class="col-md-12 col-lg-6 wow fadeIn" data-wow-delay="0.3s">
-              <img src="{% static 'img/graphic.png' %}" alt="" class="img-fluid">
+              <img src="{% static 'img/grafic_2.webp' %}" alt="" class="img-fluid">
             </div>
           </div>
         </div>
-      </div>
-      <div class="mt-2">dfbdfndfn</div>
+          <div class="container text-center mt-3">
+              <div class="align-items-center">
+                  <a href="#contact" class="btn btn-grey btn-lg">Получить консультацию</a>
+              </div>
+          </div>
     </section>
 
   </header>
