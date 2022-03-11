@@ -36,6 +36,16 @@
   <script type="text/javascript" src="{% static 'js/mdb.js' %}"></script>
 
   <!-- Custom scripts -->
+
+  <script>
+        $('.navbar-collapse').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+            $a = $($(this).attr('href'));
+            $('html,body').animate({ scrollTop: $a.offset().top - 50}, 500);
+            return false;
+        });
+   </script>
+
   <script>
     // Animation init
     new WOW().init();
