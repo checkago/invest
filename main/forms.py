@@ -1,14 +1,14 @@
 from django import forms
-from main.models import Order
+from .models import *
 
 
 class OrderForm(forms.ModelForm):
-    comment = forms.CharField(
+    text = forms.CharField(
         label='Сообщение',
-        widget=forms.Textarea(attrs={'rows': '2'})
+        widget=forms.Textarea(attrs={'rows': '1'})
     )
 
     class Meta:
         model = Order
-        fields = '__all__'
+        fields = ('name', 'phone', 'email', 'text', 'theme')
 
