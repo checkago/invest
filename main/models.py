@@ -1,5 +1,3 @@
-from email.mime import image
-
 from django.db import models
 
 
@@ -56,9 +54,7 @@ class Performance(models.Model):
 
 class Project(models.Model):
     name = models.CharField(max_length=50, verbose_name='Название проекта')
-    place = models.CharField(max_length=50, verbose_name='Место/город запуска проекта')
     image = models.ImageField(upload_to='projects/', verbose_name='Фото проекта')
-    link = models.URLField(verbose_name='Ссылка на сайт проекта')
 
     class Meta:
         verbose_name = 'Проект'
@@ -110,11 +106,12 @@ class Contact(models.Model):
         return self.name
 
 
-class OrderForm(models.Model):
+class Order(models.Model):
     customer = models.CharField(max_length=250, verbose_name='Имя заказчика')
+    theme = models.CharField(max_length=150, blank=True, verbose_name='Тема')
     phone = models.CharField(max_length=18, blank=True, verbose_name='Номер телефона')
     email = models.EmailField(verbose_name='Электронная почта')
-    organization = models.CharField(max_length=200, blank=True, verbose_name='Организация')
+    text = models.TextField(verbose_name='Текст')
 
     class Meta:
         verbose_name = 'Заявка'
