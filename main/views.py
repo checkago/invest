@@ -17,6 +17,7 @@ def index(request):
             new_order = form.save(commit=False)
             cd = form.cleaned_data
             new_order.save()
+            messages.success(request, 'Ваша сообщение успешно отправлено!')
             subject = 'Сообщение от {} ({})'.format(cd['name'], cd['email'])
             message = '"{}". {} | {}'.format(cd['text'], cd['name'], cd['phone'])
             send_mail(subject, message, 'checkago@yandex.ru', [cd['email'], 'checkago@yandex.ru'])

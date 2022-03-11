@@ -40,8 +40,13 @@
         </div>
       </div>
     </nav>
-
-    <!--Intro Section-->
+    {% for message in messages %}
+        <section class="pt-4 mt-5">
+            <div class="container bg-info text-center py-2 my-2">
+                <span class="pt-2 my-2"><strong class="text-white font-weight-bold">{{ message }}</strong></span>
+            </div>
+        </section>
+    {% endfor %}
     <section class="pt-3 pb-2"
       style="background-image: url('{% static 'img/header_background_2.webp' %}');">
         <div class="container h-75 d-flex justify-content-center align-items-center">
