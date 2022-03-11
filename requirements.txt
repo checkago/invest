@@ -4,6 +4,8 @@ django-ckeditor
 django-crispy-forms
 django-js-asset
 importlib-metadata
+psycopg2-binary==2.8.6
+django-environ
 Markdown
 Pillow
 gunicorn
