@@ -9,7 +9,7 @@ services:
     volumes:
       - ./:/usr/src/invest
     ports:
-      - "8000:8000"
+      - "8080:8080"
 
   nginx:
     build:
