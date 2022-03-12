@@ -55,8 +55,8 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'checkago@yandex.ru'
-EMAIL_HOST_PASSWORD = 'Cc41916312'
+EMAIL_HOST_USER = 'invest-consult1@yandex.ru'
+EMAIL_HOST_PASSWORD = '34A7j111'
 
 
 MIDDLEWARE = [
