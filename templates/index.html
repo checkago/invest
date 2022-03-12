@@ -53,15 +53,22 @@
         <ul class="list-unstyled">
             <li class="align-items-start text-left grey-background mb-3 pl-1">
                 <img class="float-left" src="{% static 'img/checkout.png' %}" width="20px" />
-                <span class="ml-1"> Предпосылки (допущения) Вся входящая информация, на основании которой рассчитываются будущие доходы и расходы</span>
+                <span class="ml-1"> Предпосылки (допущения)
+                    <br>
+                    Вся входящая информация, на основании которой рассчитываются будущие доходы и расходы
+                </span>
             </li>
             <li class="align-items-start text-left mt-3 grey-background mb-3 pl-1">
                 <img class="float-left" src="{% static 'img/checkout.png' %}" width="20px" />
-                <span class="ml-1"> Финансовые и технические расчёты Например, на основании мощности оборудования и его нагрузки рассчитываются затраты на электричество</span>
+                <span class="ml-1"> Финансовые и технические расчёты
+                    <br>
+                    Например, на основании мощности оборудования и его нагрузки рассчитываются затраты на электричество</span>
             </li>
             <li class="align-items-start text-left mt-3 grey-background mb-2 pl-1">
                 <img class="float-left" src="{% static 'img/checkout.png' %}" width="20px" />
-                <span class="ml-1"> Финансовая отчетность Отчёт о движении денежных средств/Cash Flow, отчёт о прибылях и убытках/P&L и баланс/Balance Sheet</span>
+                <span class="ml-1"> Финансовая отчетность
+                    <br>
+                    Отчёт о движении денежных средств/Cash Flow, отчёт о прибылях и убытках/P&L и баланс/Balance Sheet</span>
             </li>
         </ul>
 
@@ -129,13 +136,14 @@
           </div>
           <hr id="free" class="text-dark mb-5">
 
+          <div class="text-center py-2 my-2">
+            <span class="text-center py-2 my-2"><strong class="font-weight-bold">База финансовых моделей, которые можно скачать бесплатно</strong></span>
+          </div>
+
+
           <div class="container bg-light py-2 my-4">
               <span>Для микробизнеса мы создали шаблон финансовой модели, его можно скачать бесплатно.
                   Подходит для получения субсидий от центра занятости на открытие нового бизнеса и для получения кредита.</span>
-          </div>
-
-          <div class="text-center py-2 my-2">
-            <span class="text-center py-2 my-2"><strong class="font-weight-bold">База финансовых моделей, которые можно скачать бесплатно</strong></span>
           </div>
 
         <!-- Section sescription -->
@@ -173,8 +181,8 @@
         <div class="row pt-1 mt-3">
             {% for Project in projects %}
             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card py-2 my-2">
-                    <div class="card-body">
+                <div class="card my-1">
+                    <div class="">
                         <img class="img-fluid" src="{{ Project.image.url }}" />
                     </div>
                 </div>
