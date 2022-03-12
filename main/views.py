@@ -20,7 +20,7 @@ def index(request):
             messages.success(request, 'Ваша сообщение успешно отправлено!')
             subject = 'Сообщение от {} ({})'.format(cd['name'], cd['email'])
             message = '"{}". {} | {}'.format(cd['text'], cd['name'], cd['phone'])
-            send_mail(subject, message, 'checkago@yandex.ru', [cd['email'], 'checkago@yandex.ru'])
+            send_mail(subject, message, 'info@inv-c.ru', [cd['email'], 'irina.palitsyna@gmail.com'])
             sent = True
             return redirect('/')
 
